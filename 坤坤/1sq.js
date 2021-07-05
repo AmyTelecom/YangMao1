@@ -87,13 +87,13 @@ async function all() {
                 drawgold = 0;
 
                 //阅读
-                await readbook();
+                //await readbook();
 		    
 		//极速版阅读
 		//await read2book();
 
                 //收集阅读金币
-                await receivecoin();
+                //await receivecoin();
 
                 //看视频奖励金币
                 await videogoldprize(0);
