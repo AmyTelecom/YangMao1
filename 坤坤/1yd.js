@@ -69,7 +69,7 @@ async function all() {
         let sqxsck = require('./sqxsck.json');
         let CountNumber = 1;
         $.log(`============ 共 ${CountNumber} 个${jobname}账号=============`);
-       // for (let i = 0; i < CountNumber; i++) {
+        for (let i = 0; i < CountNumber; i++) {
 		   
 		   
 		   let i=(new Date).getHours()-1;
