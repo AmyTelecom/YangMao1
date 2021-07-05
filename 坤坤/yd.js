@@ -92,7 +92,7 @@ async function all() {
 
                 //收集阅读金币
                 //if(ReadTimes>0)
-                //await receivecoin();
+                await receivecoin();
 
                 //看视频奖励金币
                 //await vediogoldprize(0);
