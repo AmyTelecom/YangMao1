@@ -76,8 +76,8 @@ async function all() {
                 drawckArr = sqxsck.datas[4 + 9 * i].val.split('&&');
                 userinfock = sqxsck.datas[5 + 9 * i].val;
                 //read2ckArr = sqxsck.datas[6 + 9 * i].val.split('&&');
-                videogold2prizeckArr = sqxsck.datas[7 + 9 * i].val.split('&&');
-		videogold3prizeckArr = sqxsck.datas[8 + 9 * i].val.split('&&');    
+                //videogold2prizeckArr = sqxsck.datas[7 + 9 * i].val.split('&&');
+	        //videogold3prizeckArr = sqxsck.datas[8 + 9 * i].val.split('&&');    
 
                 $.log(`\n============ 【书旗小说${i+1}】=============`);
                 ReadTimes = 0;
@@ -87,13 +87,13 @@ async function all() {
                 drawgold = 0;
 
                 //阅读
-                //await readbook();
+                await readbook();
 		    
 		//极速版阅读
 		//await read2book();
 
                 //收集阅读金币
-                //await receivecoin();
+                await receivecoin();
 
                 //看视频奖励金币
                 await videogoldprize(0);
