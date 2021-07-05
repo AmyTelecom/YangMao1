@@ -72,9 +72,9 @@ const jobname = '书旗小说'
     const $ = Env(jobname)
 
 let ReadTimes = 0;
-let Read2Times = 0;
+//let Read2Times = 0;
 let videogold = 0;
-let video2gold = 0;
+//let video2gold = 0;
 let drawgold = 0;
 
 !(async() => {
