@@ -90,7 +90,7 @@ async function all() {
                 await readbook();
 		    
 		//极速版阅读
-		await read2book();
+		//await read2book();
 
                 //收集阅读金币
                 await receivecoin();
@@ -99,10 +99,10 @@ async function all() {
                 await videogoldprize(0);
                             
                 //极速版看视频奖励金币
-                await videogold2prize(0);
+                //await videogold2prize(0);
 		    
 		//极速版签到奖励金币
-                await videogold3prize(0);
+                //await videogold3prize(0);
 
                 //看视频奖励抽奖次数
                 await videodrawprize(0);
