@@ -1,4 +1,4 @@
-name: 书旗
+name: alibaba
 on:
   workflow_dispatch:
   schedule:
@@ -19,7 +19,7 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行 【书旗小说】'
+      - name: '运行 【alibaba】'
         run: |
           node 坤坤/1sq.js
         env:
