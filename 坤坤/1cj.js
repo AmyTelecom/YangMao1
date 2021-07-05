@@ -30,22 +30,51 @@ boxjs：https://raw.githubusercontent.com/xiaokxiansheng/js/master/Task/cxk10.bo
 5 点击 我的-去赚钱-记录,获得 用户信息url;
  */
 
-const jobname = '书旗小说';
-const $ = Env(jobname);
+//const jobname = '书旗小说';
+//const $ = Env(jobname);
 
 /*ck解密*/
-let fs = require('fs');
-const crypto = require('crypto');
+//let fs = require('fs');
+//const crypto = require('crypto');
 
-function aesDecrypt(encrypted, key) {
-    const decipher = crypto.createDecipher('aes192', key);
-    let decrypted = decipher.update(encrypted, 'hex', 'utf8');
-    decrypted += decipher.final('utf8');
-    return decrypted;
-}
+//function aesDecrypt(encrypted, key) {
+    //const decipher = crypto.createDecipher('aes192', key);
+    //let decrypted = decipher.update(encrypted, 'hex', 'utf8');
+    //decrypted += decipher.final('utf8');
+    //return decrypted;
+//}
+
+//let ReadTimes = 0;
+//let vediogold = 0;
+//let drawgold = 0;
+
+//!(async() => {
+    //await all();
+//})()
+//.catch((e) => {
+    //$.log('', `❌ ${$.name}, 失败! 原因: ${e}!`, '')
+//})
+//.finally(() => {
+    //$.done();
+//})
+
+//async function all() {
+    //nodejs运行
+    //if ($.isNode()) {
+
+        //let encrypted = fs.readFileSync('./sqxsck.txt', 'utf8');
+        //key = process.env.ENCRYPT_KEY;
+        //let decrypted = await aesDecrypt(encrypted, key);
+        //sqxsck = JSON.parse(decrypted);
+        //let sqxsck = require('./sqxsck.json');
+        //let CountNumber = 1;
+const jobname = '书旗小说'
+    const $ = Env(jobname)
 
 let ReadTimes = 0;
-let vediogold = 0;
+let Read2Times = 0;
+let videogold = 0;
+let video2gold = 0;
 let drawgold = 0;
 
 !(async() => {
@@ -62,17 +91,13 @@ async function all() {
     //nodejs运行
     if ($.isNode()) {
 
-        //let encrypted = fs.readFileSync('./sqxsck.txt', 'utf8');
-        //key = process.env.ENCRYPT_KEY;
-        //let decrypted = await aesDecrypt(encrypted, key);
-        //sqxsck = JSON.parse(decrypted);
         let sqxsck = require('./sqxsck.json');
-        let CountNumber = 1;
+        let CountNumber = sqxsck.settings[1].val;
         $.log(`============ 共 ${CountNumber} 个${jobname}账号=============`);
         for (let i = 0; i < CountNumber; i++) {
 		   
 		   
-		   let i=(new Date).getHours()-1;
+		   //let i=(new Date).getHours()-1;
 		   
             if (sqxsck.datas[0 + 6 * i].val) {
                 readckArr = sqxsck.datas[0 + 6 * i].val.split('&&');
