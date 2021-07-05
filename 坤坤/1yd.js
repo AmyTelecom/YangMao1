@@ -63,9 +63,9 @@ async function all() {
     if ($.isNode()) {
 
         //let encrypted = fs.readFileSync('./sqxsck.txt', 'utf8');
-        key = process.env.ENCRYPT_KEY;
-        let decrypted = await aesDecrypt(encrypted, key);
-        sqxsck = JSON.parse(decrypted);
+        //key = process.env.ENCRYPT_KEY;
+        //let decrypted = await aesDecrypt(encrypted, key);
+        //sqxsck = JSON.parse(decrypted);
         let sqxsck = require('./sqxsck.json');
         let CountNumber = 1;
         $.log(`============ 共 ${CountNumber} 个${jobname}账号=============`);
