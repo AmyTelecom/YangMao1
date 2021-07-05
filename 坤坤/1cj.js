@@ -66,10 +66,10 @@ async function all() {
         //key = process.env.ENCRYPT_KEY;
         //let decrypted = await aesDecrypt(encrypted, key);
         //sqxsck = JSON.parse(decrypted);
-        let sqxsck = require('./sqxsck1.json');
+        let sqxsck = require('./sqxsck.json');
         let CountNumber = 1;
         $.log(`============ 共 ${CountNumber} 个${jobname}账号=============`);
-       // for (let i = 0; i < CountNumber; i++) {
+        for (let i = 0; i < CountNumber; i++) {
 		   
 		   
 		   let i=(new Date).getHours()-1;
