@@ -2,7 +2,7 @@ name: alibaba
 on:
   workflow_dispatch:
   schedule:
-     - cron: '3 3,12,23 * * *'
+     - cron: '*/30 6-22 * * *'
   watch:
     types: started
 jobs:
