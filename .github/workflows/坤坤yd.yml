@@ -1,4 +1,4 @@
-name: AmyTelecom
+name: 阅读
 on:
   workflow_dispatch:
   schedule:
@@ -19,9 +19,9 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行 【AmyTelecom】'
+      - name: '运行 【阅读】'
         run: |
-          node 书旗/Amy.js
+          node 坤坤/1yd.js
         env:
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
