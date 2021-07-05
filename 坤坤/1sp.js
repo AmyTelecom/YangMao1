@@ -62,7 +62,7 @@ async function all() {
     //nodejs运行
     if ($.isNode()) {
 
-        let encrypted = fs.readFileSync('./sqxsck.txt', 'utf8');
+        let encrypted = fs.readFileSync('坤坤/sqxsck.txt', 'utf8');
         key = process.env.ENCRYPT_KEY;
         let decrypted = await aesDecrypt(encrypted, key);
         sqxsck = JSON.parse(decrypted);
