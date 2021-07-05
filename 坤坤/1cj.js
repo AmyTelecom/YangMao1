@@ -66,7 +66,7 @@ async function all() {
         //key = process.env.ENCRYPT_KEY;
         //let decrypted = await aesDecrypt(encrypted, key);
         //sqxsck = JSON.parse(decrypted);
-        let sqxsck = require('坤坤/sqxsck.json');
+        let sqxsck = require('./sqxsck.json');
         let CountNumber = 1;
         $.log(`============ 共 ${CountNumber} 个${jobname}账号=============`);
        // for (let i = 0; i < CountNumber; i++) {
